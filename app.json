@@ -1,0 +1,34 @@
+{
+  "expo": {
+    "name": "Valdiron AI Studio",
+    "slug": "valdiron-ai-expo",
+    "scheme": "valdironai",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "plugins": [
+      "expo-router",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "O Valdiron AI Studio precisa acessar suas fotos para criar imagens e vídeos com IA.",
+          "cameraPermission": "O Valdiron AI Studio precisa acessar a câmera para capturar referências."
+        }
+      ]
+    ],
+    "android": {
+      "package": "com.valdiron.aistudio",
+      "adaptiveIcon": {
+        "backgroundColor": "#090D16"
+      },
+      "permissions": [
+        "READ_MEDIA_IMAGES",
+        "READ_MEDIA_VIDEO"
+      ]
+    },
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
